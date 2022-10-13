@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">intine-panik-uts</string>
+
+    <string-array name="labels_array">
+        <item>Gaming</item>
+        <item>Technology</item>
+        <item>Regional</item>
+        <item>Artist</item>
+    </string-array>
+
+</resources>
