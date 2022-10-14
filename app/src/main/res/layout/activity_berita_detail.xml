@@ -53,7 +53,8 @@
                 android:text="Sample Desc"
                 android:textSize="18dp"
                 android:layout_marginHorizontal="25dp"
-                android:justificationMode="inter_word"/>
+                android:justificationMode="inter_word"
+                android:layout_marginBottom="25dp"/>
         </RelativeLayout>
 
     </ScrollView>
