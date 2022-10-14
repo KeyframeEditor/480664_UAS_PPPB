@@ -5,8 +5,10 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -33,8 +35,12 @@ public class BeritaAdapter extends RecyclerView.Adapter<BeritaAdapter.ViewHolder
     public void onBindViewHolder(@NonNull BeritaAdapter.ViewHolder holder, int position) {
         final Berita dataBerita = values.get(position);
         holder.judul.setText(dataBerita.getJudul());
-        holder.kategori.setText("Kategori: "+dataBerita.getKategori());
-        holder.konten.setText(dataBerita.getKonten());
+        holder.kategori.setText(dataBerita.getKategori());
+        holder.tanggalRilis.setText(dataBerita.getTanggalRilis());
+
+        //display image rule (Non-procedural)
+        int imageResource = holder.itemView.getContext().getResources().getIdentifier("@drawable/nintendo_switch_logo", null, "com.example.intine_panik_uts");
+        holder.gambarBerita.setImageResource(imageResource);
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,13 +62,16 @@ public class BeritaAdapter extends RecyclerView.Adapter<BeritaAdapter.ViewHolder
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView judul;
         TextView kategori;
-        TextView konten;
+        TextView tanggalRilis;
+        ImageView gambarBerita;
+
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             judul = itemView.findViewById(R.id.judul);
             kategori = itemView.findViewById(R.id.kategori);
-            konten = itemView.findViewById(R.id.konten);
+            tanggalRilis = itemView.findViewById(R.id.tanggalRilis);
+            gambarBerita = itemView.findViewById(R.id.gambarBerita);
         }
     }
 }

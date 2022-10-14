@@ -30,8 +30,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        textViewTanggal = findViewById(R.id.textDate);
-        textViewKategori = findViewById(R.id.textKategori);
         mainRecyclerView = findViewById(R.id.mainRecyclerView);
 
         Intent intent = getIntent();
@@ -51,9 +49,6 @@ public class MainActivity extends AppCompatActivity {
                 listFilteredBerita.add(dataBerita);
             }
         }
-
-        textViewTanggal.setText(pref_TanggalLahir);
-        textViewKategori.setText(pref_Kategori);
 
         beritaAdapter = new BeritaAdapter(this,listFilteredBerita);
         mainRecyclerView.setLayoutManager(new LinearLayoutManager(this));
