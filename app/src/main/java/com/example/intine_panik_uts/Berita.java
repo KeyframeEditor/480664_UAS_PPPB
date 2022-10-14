@@ -6,13 +6,15 @@ public class Berita {
     private String targetUsia;
     private String tanggalRilis;
     private String kategori;
+    private String imgName;
 
-    public Berita(String judul, String konten, String targetUsia, String tanggalRilis, String kategori) {
+    public Berita(String judul, String konten, String targetUsia, String tanggalRilis, String kategori, String imgName) {
         this.judul = judul;
         this.konten = konten;
         this.targetUsia = targetUsia;
         this.tanggalRilis = tanggalRilis;
         this.kategori = kategori;
+        this.imgName = imgName;
     }
 
     public String getJudul() {
@@ -53,6 +55,14 @@ public class Berita {
 
     public void setKategori(String kategori) {
         this.kategori = kategori;
+    }
+
+    public String getImgName() {
+        return imgName;
+    }
+
+    public void setImgName(String imgName) {
+        this.imgName = imgName;
     }
 
     //    judul, konten, minimum target usia, tanggal rilis, kategori,  link gambar, dan lain lain

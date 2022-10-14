@@ -7,6 +7,7 @@
     android:padding="10dp"
     android:background="@drawable/et_style"
     android:layout_marginBottom="10dp"
+
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -56,8 +57,6 @@
 
         </LinearLayout>
 
-
-
         <androidx.cardview.widget.CardView
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -71,23 +70,15 @@
                 android:layout_height="100dp"
                 app:cardCornerRadius="10dp"
                 android:layout_gravity="center">
-
                 <ImageView
                     android:id="@+id/gambarBerita"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-
                     />
-
             </androidx.cardview.widget.CardView>
 
         </androidx.cardview.widget.CardView>
 
-
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-
 
 </LinearLayout>

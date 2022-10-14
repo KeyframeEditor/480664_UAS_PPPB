@@ -38,8 +38,8 @@ public class BeritaAdapter extends RecyclerView.Adapter<BeritaAdapter.ViewHolder
         holder.kategori.setText(dataBerita.getKategori());
         holder.tanggalRilis.setText(dataBerita.getTanggalRilis());
 
-        //display image rule (Non-procedural)
-        int imageResource = holder.itemView.getContext().getResources().getIdentifier("@drawable/nintendo_switch_logo", null, "com.example.intine_panik_uts");
+        //display image rule
+        int imageResource = holder.itemView.getContext().getResources().getIdentifier("@drawable/"+dataBerita.getImgName(), null, "com.example.intine_panik_uts");
         holder.gambarBerita.setImageResource(imageResource);
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
@@ -49,6 +49,7 @@ public class BeritaAdapter extends RecyclerView.Adapter<BeritaAdapter.ViewHolder
                 intent.putExtra("judul",dataBerita.getJudul());
                 intent.putExtra("kategori",dataBerita.getKategori());
                 intent.putExtra("konten",dataBerita.getKonten());
+                intent.putExtra("gambar",dataBerita.getImgName());
                 view.getContext().startActivity(intent);
             }
         });

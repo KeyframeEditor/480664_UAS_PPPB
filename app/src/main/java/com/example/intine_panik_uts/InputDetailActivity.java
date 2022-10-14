@@ -1,5 +1,6 @@
 package com.example.intine_panik_uts;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
 
@@ -26,6 +27,10 @@ public class InputDetailActivity extends AppCompatActivity implements AdapterVie
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_input_detail);
+
+        //Hide My App Bar
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
 
         spinnerPreferensi = findViewById(R.id.spinnerPreferensi);
         btnSubmit = findViewById(R.id.btnSubmit);
