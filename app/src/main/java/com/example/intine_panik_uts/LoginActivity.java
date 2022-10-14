@@ -37,7 +37,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String username = String.valueOf(editTextUsername.getText());
                 String password = String.valueOf(editTextPassword.getText());
-                if (username.equals("pakjoko")||password.equals("yangpentingcuan")){
+                if (username.equals("pakjoko")&&password.equals("yangpentingcuan")){
                     Intent intent = new Intent(LoginActivity.this, InputDetailActivity.class);
                     startActivity(intent);
                 }else{
