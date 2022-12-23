@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".RegisterActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -27,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="left"
-            android:text="Login"
+            android:text="Register"
             android:textColor="@color/black"
             android:textSize="30dp"
             />
@@ -37,7 +37,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="left"
-            android:text="Please sign in to continue"
+            android:text="Fill the fields below to register"
             android:layout_below="@id/textView"
             />
 
@@ -58,12 +58,11 @@
             android:id="@+id/editTextUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter your username"
+            android:hint="Enter username"
             android:text=""
             android:textColor="@color/black"
             android:background="@drawable/form_style"
             android:layout_marginBottom="10dp"/>
-
 
         <EditText
             android:id="@+id/editTextPassword"
@@ -71,18 +70,28 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/editTextUsername"
             android:background="@drawable/form_style"
-            android:hint="Enter your password"
+            android:hint="Enter password"
             android:inputType="textPassword"
             android:text=""
+            android:layout_marginBottom="10dp"
             android:textSize="18dp" />
 
+        <EditText
+            android:id="@+id/teksTanggalLahir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukan Tanggal Lahir"
+            android:background="@drawable/form_style"
+            android:layout_below="@+id/editTextPassword"
+            android:layout_marginBottom="10dp"/>
+
         <TextView
-            android:id="@+id/editTextRegister"
+            android:id="@+id/textViewHaveAccount"
             android:gravity="right"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/editTextPassword"
-            android:text="sign up"
+            android:layout_below="@+id/teksTanggalLahir"
+            android:text="already have an account?"
             android:layout_marginBottom="25dp"
             android:textColor="@color/design_default_color_primary"
             />
@@ -91,8 +100,8 @@
             android:id="@+id/btnSubmit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/editTextRegister"
-            android:text="SIGN IN" />
+            android:layout_below="@id/textViewHaveAccount"
+            android:text="SIGN UP" />
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

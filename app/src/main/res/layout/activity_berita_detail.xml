@@ -1,14 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".BeritaDetailActivity">
 
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/buttonLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:src="@drawable/ic_heart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/buttonEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_baseline_edit_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_baseline_delete_forever_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonEdit" />
+
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -18,12 +62,12 @@
                 android:id="@+id/judul"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
                 android:gravity="center"
+                android:paddingTop="25dp"
                 android:text="Sample Title"
                 android:textColor="@color/black"
-                android:textSize="35dp"
-                android:paddingTop="25dp"
-                android:layout_marginHorizontal="25dp"/>
+                android:textSize="35dp" />
 
             <TextView
                 android:id="@+id/kategori"
@@ -34,31 +78,32 @@
                 android:text="Sample Type"
                 android:textSize="12sp" />
 
-            <ImageView
-                android:id="@+id/gambarBerita"
+            <TextView
+                android:id="@+id/createdBy"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_below="@id/kategori"
-                android:layout_marginHorizontal="25dp"
-                android:layout_marginVertical="25dp"
-                />
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kategori"
+                android:gravity="center"
+                android:text="Sample Created By"
+                android:textSize="12sp" />
 
             <TextView
                 android:id="@+id/konten"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/gambarBerita"
+                android:layout_below="@+id/createdBy"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
                 android:ellipsize="end"
                 android:gravity="fill_vertical"
-                android:text="Sample Desc"
-                android:textSize="18dp"
-                android:layout_marginHorizontal="25dp"
                 android:justificationMode="inter_word"
-                android:layout_marginBottom="25dp"/>
+                android:text="Sample Desc"
+                android:textSize="18dp" />
         </RelativeLayout>
 
     </ScrollView>
 
 
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

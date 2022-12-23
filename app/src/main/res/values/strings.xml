@@ -1,7 +1,14 @@
 <resources>
-    <string name="app_name">intine-panik-uts</string>
+    <string name="app_name">intine-panik-uas</string>
 
     <string-array name="labels_array">
+        <item>Semua Kategori</item>
+        <item>Gaming</item>
+        <item>Technology</item>
+        <item>Regional</item>
+        <item>Artist</item>
+    </string-array>
+    <string-array name="tambah_berita_array">
         <item>Gaming</item>
         <item>Technology</item>
         <item>Regional</item>

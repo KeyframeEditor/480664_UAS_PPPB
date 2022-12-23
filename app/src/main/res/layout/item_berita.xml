@@ -17,7 +17,7 @@
 
         <LinearLayout
             android:id="@+id/linearLayout2"
-            android:layout_width="225dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -54,31 +54,7 @@
                 android:paddingHorizontal="8dp"
                 android:text="tanggal"
                 android:textSize="15dp" />
-
         </LinearLayout>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            app:cardCornerRadius="10dp"
-            app:cardBackgroundColor="@color/white"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                app:cardCornerRadius="10dp"
-                android:layout_gravity="center">
-                <ImageView
-                    android:id="@+id/gambarBerita"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    />
-            </androidx.cardview.widget.CardView>
-
-        </androidx.cardview.widget.CardView>
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>

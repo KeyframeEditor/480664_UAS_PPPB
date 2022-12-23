@@ -6,16 +6,24 @@ public class Berita {
     private String targetUsia;
     private String tanggalRilis;
     private String kategori;
-    private String imgName;
+    private String createdBy;
+    private String berita_key;
 
-    public Berita(String judul, String konten, String targetUsia, String tanggalRilis, String kategori, String imgName) {
-        this.judul = judul;
-        this.konten = konten;
-        this.targetUsia = targetUsia;
-        this.tanggalRilis = tanggalRilis;
-        this.kategori = kategori;
-        this.imgName = imgName;
+    public String getBerita_key() {
+        return berita_key;
     }
+
+    public void setBerita_key(String berita_key) {
+        this.berita_key = berita_key;
+    }
+//    public Berita(String judul, String konten, String targetUsia, String tanggalRilis, String kategori, String createdBy) {
+//        this.judul = judul;
+//        this.konten = konten;
+//        this.targetUsia = targetUsia;
+//        this.tanggalRilis = tanggalRilis;
+//        this.kategori = kategori;
+//        this.createdBy = createdBy;
+//    }
 
     public String getJudul() {
         return judul;
@@ -57,12 +65,12 @@ public class Berita {
         this.kategori = kategori;
     }
 
-    public String getImgName() {
-        return imgName;
+    public String getCreatedBy() {
+        return createdBy;
     }
 
-    public void setImgName(String imgName) {
-        this.imgName = imgName;
+    public void setCreatedBy(String createdBy) {
+        this.createdBy = createdBy;
     }
 
     //    judul, konten, minimum target usia, tanggal rilis, kategori,  link gambar, dan lain lain

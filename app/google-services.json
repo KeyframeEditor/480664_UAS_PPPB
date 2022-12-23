@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "592818857976",
+    "project_id": "uas-papbb",
+    "storage_bucket": "uas-papbb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592818857976:android:ad4cdd8cbc5ad42b09980d",
+        "android_client_info": {
+          "package_name": "com.example.intine_panik_uts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592818857976-p9qm2lleanak11cnbeltsd7iph0gqo3a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2APlssa6YJUb7Gvxq2hbLpCu5pCTQRac"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592818857976-p9qm2lleanak11cnbeltsd7iph0gqo3a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

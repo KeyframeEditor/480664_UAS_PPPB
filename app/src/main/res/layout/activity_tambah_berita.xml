@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TambahBeritaActivity">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambah Berita"
+        android:textSize="35dp"
+
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="25dp"/>
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="35dp"
+        android:paddingTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle">
+
+        <EditText
+            android:id="@+id/editTextJudulBerita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukan Judul"
+            android:text=""
+            android:textColor="@color/black"
+            android:background="@drawable/form_style"
+            android:layout_marginBottom="10dp"/>
+
+        <RelativeLayout
+            android:id="@+id/spinnerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextJudulBerita"
+            android:layout_marginBottom="10dp"
+            android:layout_weight=".28"
+            android:background="@drawable/spinner_border"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/editTextJudulBerita">
+
+            <Spinner
+                android:id="@+id/spinnerPreferensi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:spinnerMode="dropdown" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/arrow_dropdown" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/editTextIsiBerita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinnerLayout"
+            android:background="@drawable/form_style"
+            android:hint="Masukan isi berita"
+            android:text=""
+            android:layout_marginBottom="10dp"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/editTextTargetUsia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukan target usia"
+            android:background="@drawable/form_style"
+            android:layout_below="@+id/editTextIsiBerita"
+            android:layout_marginBottom="25dp"/>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextTargetUsia"
+            android:text="SUBMIT" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
