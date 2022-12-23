@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     DatabaseReference databaseReferenceBerita = FirebaseDatabase.getInstance().getReference("beritaDB");
 
     public ArrayList<Berita> listBerita = new ArrayList<Berita>();
-    public ArrayList<Berita> listFilteredBerita = new ArrayList<Berita>();
+    public static ArrayList<Berita> listFilteredBerita = new ArrayList<Berita>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

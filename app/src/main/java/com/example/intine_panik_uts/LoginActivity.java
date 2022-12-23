@@ -66,8 +66,8 @@ public class LoginActivity extends AppCompatActivity {
             intent.putExtra("pref_Kategori","gaming");
             intent.putExtra("pref_TanggalLahir",getLoggedInUserTanggalLahir);
             intent.putExtra("logged_in",true);
-            Toast.makeText(LoginActivity.this, "username: "+getUsername, Toast.LENGTH_SHORT).show();
-            Toast.makeText(LoginActivity.this, "tgl: "+getLoggedInUserTanggalLahir, Toast.LENGTH_SHORT).show();
+//            Toast.makeText(LoginActivity.this, "username: "+getUsername, Toast.LENGTH_SHORT).show();
+//            Toast.makeText(LoginActivity.this, "tgl: "+getLoggedInUserTanggalLahir, Toast.LENGTH_SHORT).show();
             startActivityForResult(intent,1);
         }
 
@@ -107,7 +107,7 @@ public class LoginActivity extends AppCompatActivity {
                                     intent.putExtra("pref_Kategori",pilihanKategori);
                                     intent.putExtra("pref_TanggalLahir",tanggalLahir);
                                     intent.putExtra("logged_in",true);
-                                    startActivityForResult(intent,1);
+                                    startActivityForResult(intent,2);
                                     break;
                                 }else{
                                     userIsLoggedIn = false;

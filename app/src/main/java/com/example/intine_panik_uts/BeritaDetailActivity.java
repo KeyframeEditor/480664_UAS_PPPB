@@ -172,7 +172,7 @@ public class BeritaDetailActivity extends AppCompatActivity {
                 intent.putExtra("edit_konten",textKonten);
                 intent.putExtra("edit_target_usia",textTargetUsia);
 
-                startActivityForResult(intent,1);
+                startActivityForResult(intent,4);
             }
         });
 

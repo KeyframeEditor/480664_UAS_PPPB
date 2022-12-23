@@ -103,7 +103,7 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
 
-        Toast.makeText(this, "Berhasil menambahkan user", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Berhasil daftar akun", Toast.LENGTH_SHORT).show();
     }
 
     //    Date Fragment Rule
